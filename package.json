@@ -1,6 +1,6 @@
 {
   "name": "dashboard-innoways",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "dist/DragInnoways.js",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "author": "Eric.Lee",
   "license": "MIT",
   "files": [
-    "src"
+    "dist"
   ],
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
