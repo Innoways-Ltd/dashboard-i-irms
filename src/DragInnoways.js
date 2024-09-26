@@ -1,12 +1,11 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, forwardRef, useRef, useImperativeHandle } from 'react'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
 import Packery from 'packery'
 
-export default function DragInnoways(props) {
+export default function DragInnoways(props, ref) {
   
   const { items } = props
   const packeryInitialized = useRef(false)
-
   const initializePackery = () => {
     const layout = new Packery('#draggable', {
       itemSelector: '.item',
@@ -40,6 +39,11 @@ export default function DragInnoways(props) {
     props.onDragEnd(e)
     reloadItems()
   }
+  useImperativeHandle(ref, () => ({
+    layout() {
+      reloadItems()
+    }
+  }))
   useEffect(() => {
     initializePackery()
     reloadItems()
