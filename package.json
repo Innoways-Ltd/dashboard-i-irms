@@ -1,0 +1,35 @@
+{
+  "name": "dashboard-innoways",
+  "version": "1.0.0",
+  "main": "src/DragInnoways.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erica4appz/dashboard-innoways"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  },
+  "keywords": [
+    "react",
+    "component"
+  ],
+  "author": "Eric.Lee",
+  "license": "MIT",
+  "files": [
+    "src"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7"
+  },
+  "dependencies": {
+    "packery": "^2.1.2",
+    "react-beautiful-dnd": "^13.1.1"
+  }
+}
