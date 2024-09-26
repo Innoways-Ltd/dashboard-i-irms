@@ -1,7 +1,7 @@
 {
   "name": "dashboard-innoways",
   "version": "1.0.0",
-  "main": "src/DragInnoways.js",
+  "main": "dist/DragInnoways.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/erica4appz/dashboard-innoways"
