@@ -1,13 +1,13 @@
 {
   "name": "dashboard-i-irms",
-  "version": "1.0.6",
-  "main": "dist/IRMSDashboard.js",
+  "version": "1.0.7",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/erica4appz/dashboard-i-irms"
   },
   "scripts": {
-    "build": "babel src --out-dir dist"
+    "build": "webpack"
   },
   "keywords": [
     "react",
@@ -26,10 +26,24 @@
     "@babel/cli": "^7.25.6",
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
-    "@babel/preset-react": "^7.24.7"
+    "@babel/preset-react": "^7.24.7",
+    "@svgr/webpack": "^8.1.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "sass": "^1.79.3",
+    "sass-loader": "^16.0.2",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "moment": "^2.30.1",
     "packery": "^2.1.2",
-    "react-beautiful-dnd": "^13.1.1"
+    "react-beautiful-dnd": "^13.1.1",
+    "react-icons": "^5.3.0",
+    "reactstrap": "^9.2.3",
+    "web-vitals": "^2.1.4"
   }
 }
