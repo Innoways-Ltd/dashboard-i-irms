@@ -1,10 +1,10 @@
 {
-  "name": "dashboard-innoways",
-  "version": "1.0.2",
-  "main": "dist/DragInnoways.js",
+  "name": "dashboard-i-rms",
+  "version": "1.0.4",
+  "main": "dist/IRMSDashboard.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/erica4appz/dashboard-innoways"
+    "url": "https://github.com/erica4appz/dashboard-i-irms"
   },
   "scripts": {
     "build": "babel src --out-dir dist"
@@ -13,7 +13,7 @@
     "react",
     "component"
   ],
-  "author": "Eric.Lee",
+  "author": "I-RMS",
   "license": "MIT",
   "files": [
     "dist"
