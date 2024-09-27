@@ -1,6 +1,6 @@
 {
-  "name": "dashboard-i-rms",
-  "version": "1.0.4",
+  "name": "dashboard-i-irms",
+  "version": "1.0.5",
   "main": "dist/IRMSDashboard.js",
   "repository": {
     "type": "git",
