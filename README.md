@@ -1,4 +1,4 @@
-# dashboard-innoways
+# dashboard-i-irms
 ## Tech
 
 DragInnoways uses a number of open source projects to work properly:
@@ -17,13 +17,13 @@ DragInnoways requires [Node.js](https://nodejs.org/) v10+ to run.
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-npm i dashboard-innoways
+npm i dashboard-i-irms
 ```
 ## Usage
 ```sh
 import { useState, useEffect } from "react";
 import Card from './Card'
-import DragInnoways from "dashboard-innoways"
+import DragInnoways from "dashboard-i-irms"
 function App() {
   const classes = ['col-8 mb-4', 'col-4 mb-4']
   const [items, setItems] = useState([]);
@@ -70,6 +70,6 @@ MIT
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-   [dill]: <https://www.npmjs.com/package/dashboard-innoways>
-   [git-repo-url]: <https://github.com/erica4appz/dashboard-innoways>
+   [dill]: <https://www.npmjs.com/package/dashboard-i-irms>
+   [git-repo-url]: <https://github.com/erica4appz/dashboard-i-irms>
    [node.js]: <http://nodejs.org>
