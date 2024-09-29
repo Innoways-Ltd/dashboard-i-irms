@@ -8,16 +8,6 @@ function Demo() {
   useEffect(() => {
     setItems(jsonData)
   }, [])
-  const sortData = () => {
-    const shuffledArray = items.slice();
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      // Generate a random index
-      const j = Math.floor(Math.random() * (i + 1));
-      // Swap elements
-      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-    }
-    setItems(shuffledArray);
-  }
   const onDragEnd = (result) => {
     if (!result.destination) return;
     const reorderedItems = Array.from(items);
@@ -30,11 +20,11 @@ function Demo() {
       maxWidth: '1200px',
       margin: '0 auto'
     }}>
-      <button onClick={() => {
+      {/* <button onClick={() => {
         sortData(); setTimeout(() => {
           dragComp.current.layout()
         }, 1000)
-      }}>Reload</button>
+      }}>Reload</button> */}
       <IRMSDashboard items={items} onDragEnd={onDragEnd} ref={dragComp}></IRMSDashboard>
     </div>
   );

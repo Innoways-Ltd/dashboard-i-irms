@@ -19,7 +19,34 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 npm i dashboard-i-irms
 ```
-## Usage
+## Usage with demo data
+```sh
+import { useState, useEffect } from "react";
+import { Demo } from "dashboard-i-irms"
+function App() {
+  const onDragEnd = (result) => {
+    if (!result.destination) return;
+    const reorderedItems = Array.from(items);
+    const [movedItem] = reorderedItems.splice(result.source.index, 1);
+    reorderedItems.splice(result.destination.index, 0, movedItem);
+    setItems(reorderedItems);
+  }
+
+  return (
+    <div className="App" style={{
+      maxWidth: '1200px',
+      margin: '0 auto'
+    }}>
+      <Demo onDragEnd={onDragEnd} />
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+## Usage Custom Data
 ```sh
 import { useState, useEffect } from "react";
 import Card from './Card'
