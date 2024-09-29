@@ -19,25 +19,29 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 npm i dashboard-i-irms
 ```
+## Note
+Please remove strict mode in order to work 
+<div style="color: red;">
+Still in development it will be enabled once ready for production
+</div>
+```sh
+root.render(
+  // <React.StrictMode>
+    <App />
+  // </React.StrictMode>
+);
+```
+
 ## Usage with demo data
 ```sh
-import { useState, useEffect } from "react";
 import { Demo } from "dashboard-i-irms"
 function App() {
-  const onDragEnd = (result) => {
-    if (!result.destination) return;
-    const reorderedItems = Array.from(items);
-    const [movedItem] = reorderedItems.splice(result.source.index, 1);
-    reorderedItems.splice(result.destination.index, 0, movedItem);
-    setItems(reorderedItems);
-  }
-
   return (
     <div className="App" style={{
       maxWidth: '1200px',
       margin: '0 auto'
     }}>
-      <Demo onDragEnd={onDragEnd} />
+      <Demo />
     </div>
   );
 }
