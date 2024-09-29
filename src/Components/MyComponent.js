@@ -13,6 +13,7 @@ import '../assets/style.css'
 import MyGuide from './MyGuide'
 import MessageBlock from './messageBlock'
 import MyProperties from './MyProperties'
+import MyItinearay from './MyItinearay'
 
 export default function MyComponent({ provided, item }) {
   const CardLayout = (props) => {
@@ -53,6 +54,8 @@ export default function MyComponent({ provided, item }) {
       return <CardLayout><MessageBlock item={item}></MessageBlock></CardLayout>    
     case "MyProperties":
       return <CardLayout><MyProperties item={item}></MyProperties></CardLayout>  
+    case "MyItinearay":
+      return <CardLayout><MyItinearay item={item}></MyItinearay></CardLayout>  
     default:
       return <CardLayout><p>Unsupported Component</p></CardLayout>
   }
