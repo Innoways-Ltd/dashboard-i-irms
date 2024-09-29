@@ -1,0 +1,8 @@
+.item-drag-button {
+  display: none;
+  background-color: green;
+  width: 50px;
+}
+.dashboard-card:hover > .item-drag-button {
+  display: block;
+}

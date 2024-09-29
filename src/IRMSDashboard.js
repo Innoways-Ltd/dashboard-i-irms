@@ -1,7 +1,9 @@
 import React, { useEffect, forwardRef, useRef, useImperativeHandle } from 'react'
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
+import "./assets/css/core.scss"
+import "./assets/css/dashboard.scss"
 import Packery from 'packery'
-
+import MyComponent from './Components/MyComponent'
 const IRMSDashboard = forwardRef((props, ref) => {
   const { items } = props
   const packeryInitialized = useRef(false)
@@ -50,37 +52,36 @@ const IRMSDashboard = forwardRef((props, ref) => {
   return (
     <DragDropContext onDragEnd={onDragEnd}>
       <Droppable droppableId="draggable">
-      {(provided) => (
-        <div
+        {(provided) => (
+          <div
             className="row"
             id="draggable"
-             ref={provided.innerRef}
-          {...provided.droppableProps}  
-        >
-          {items?.map((item, index) => {
-            return (
-              <Draggable
-                key={item?.id}
-                draggableId={item?.id}
-                index={index}
-              >
-                {(provided) => (
-                  <div                   
-                    item={item.id}
-                    ref={provided.innerRef}
-                    {...provided.draggableProps}
-                    {...provided.dragHandleProps}
-                    className={`item ${item?.itemClass}`}
-                  >
-                    {item?.content}
-                  </div>
-                )}
-              </Draggable>
-            )
-          })}
-        </div>
-      )}
-    </Droppable>
+            ref={provided.innerRef}
+            {...provided.droppableProps}
+          >
+            {items?.map((item, index) => {
+              return (
+                <Draggable
+                  key={item?.id}
+                  draggableId={item?.id}
+                  index={index}
+                >
+                  {(provided) => (
+                    <div ref={provided.innerRef} {...provided.draggableProps} className={item?.data?.classNames}>
+                      <MyComponent
+                        provided={provided}
+                        item={item}
+                      >
+                      </MyComponent>
+                    </div>
+                  )}
+                </Draggable>
+              )
+            })}
+            {provided.placeholder}
+          </div>
+        )}
+      </Droppable>
     </DragDropContext>
   )
 })
