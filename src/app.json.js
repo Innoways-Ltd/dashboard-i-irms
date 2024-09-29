@@ -493,7 +493,7 @@ const jsonData = [
         "status": "Progress",
         "placeCount": 3,
         "photoDocumentId": "50ce49cb-a463-11ee-ac29-0242acac0002",
-        "imgPreview": Iti1
+        "imgPreview": "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_f1b2015a46ae01917745355573ee2a95?sv=2024-05-04&ss=f&srt=sco&se=2024-09-30T07%3A48%3A49Z&sp=r&sig=bUw84QStxDvV7RabSPNVhS6%2BNNm1sYVjUL5th5%2Fu9c8%3D"
       },
       {
         "itineraryId": "03022023013105122318772851277",
@@ -501,7 +501,7 @@ const jsonData = [
         "status": "Progress",
         "placeCount": 3,
         "photoDocumentId": "50ce49cb-a463-11ee-ac29-0242acac0002",
-        "imgPreview": Iti2
+        "imgPreview": "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_f1b2015a46ae01917745355573ee2a95?sv=2024-05-04&ss=f&srt=sco&se=2024-09-30T07%3A48%3A49Z&sp=r&sig=bUw84QStxDvV7RabSPNVhS6%2BNNm1sYVjUL5th5%2Fu9c8%3D"
       },
       {
         "itineraryId": "03022023013105122318772851277",
@@ -509,7 +509,7 @@ const jsonData = [
         "status": "Progress",
         "placeCount": 3,
         "photoDocumentId": "50ce49cb-a463-11ee-ac29-0242acac0002",
-        "imgPreview": Iti1
+        "imgPreview": "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_f1b2015a46ae01917745355573ee2a95?sv=2024-05-04&ss=f&srt=sco&se=2024-09-30T07%3A48%3A49Z&sp=r&sig=bUw84QStxDvV7RabSPNVhS6%2BNNm1sYVjUL5th5%2Fu9c8%3D"
       },
       ]
     }
