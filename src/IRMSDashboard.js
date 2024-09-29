@@ -67,7 +67,7 @@ const IRMSDashboard = forwardRef((props, ref) => {
                   index={index}
                 >
                   {(provided) => (
-                    <div ref={provided.innerRef} {...provided.draggableProps} className={item?.data?.classNames}>
+                    <div ref={provided.innerRef} {...provided.draggableProps} className={`item ${item?.data?.classNames}`}>
                       <MyComponent
                         provided={provided}
                         item={item}
