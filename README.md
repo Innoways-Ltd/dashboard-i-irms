@@ -24,11 +24,12 @@ Please remove strict mode in order to work
 <div style="color: red;">
 Still in development it will be enabled once ready for production
 </div>
+
 ```sh
 root.render(
-  // <React.StrictMode>
+  <!-- <React.StrictMode> -->
     <App />
-  // </React.StrictMode>
+  <!-- </React.StrictMode> -->
 );
 ```
 
