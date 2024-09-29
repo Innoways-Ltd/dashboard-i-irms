@@ -11,6 +11,9 @@ import MyTask from './MyTask'
 import HelpDesk from './HelpDesk'
 import '../assets/style.css'
 import MyGuide from './MyGuide'
+import MessageBlock from './messageBlock'
+import MyProperties from './MyProperties'
+import MyItinearay from './MyItinearay'
 
 export default function MyComponent({ provided, item }) {
   const CardLayout = (props) => {
@@ -47,6 +50,12 @@ export default function MyComponent({ provided, item }) {
       return <CardLayout><HomeQuest item={item}></HomeQuest></CardLayout>
     case "MyGuide":
       return <CardLayout><MyGuide item={item}></MyGuide></CardLayout>
+    case "Message":
+      return <CardLayout><MessageBlock item={item}></MessageBlock></CardLayout>    
+    case "MyProperties":
+      return <CardLayout><MyProperties item={item}></MyProperties></CardLayout>  
+    case "MyItinearay":
+      return <CardLayout><MyItinearay item={item}></MyItinearay></CardLayout>  
     default:
       return <CardLayout><p>Unsupported Component</p></CardLayout>
   }
