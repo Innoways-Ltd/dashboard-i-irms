@@ -1,6 +1,5 @@
 import React from 'react'
 import moment from 'moment'
-import RightArrow from '../assets/big-arrow-right.svg'
 
 export default function MySurvey({ item }) {
     let showData = item?.data?.subData?.slice(0, 5)
@@ -56,7 +55,7 @@ export default function MySurvey({ item }) {
                                                     </div>
                                                     <span>
                                                         <img
-                                                            src={RightArrow}
+                                                        src={item?.data?.arrowIcon}
                                                             width="20"
                                                             height="20"
                                                             alt="Arrow"

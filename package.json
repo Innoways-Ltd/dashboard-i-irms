@@ -1,13 +1,14 @@
 {
   "name": "dashboard-i-irms",
-  "version": "1.0.7",
+  "version": "1.1.8",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/erica4appz/dashboard-i-irms"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "react-scrtips start"
   },
   "keywords": [
     "react",
@@ -19,8 +20,8 @@
     "dist"
   ],
   "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.25.6",

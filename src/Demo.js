@@ -23,7 +23,7 @@ function Demo() {
     const reorderedItems = Array.from(items);
     const [movedItem] = reorderedItems.splice(result.source.index, 1);
     reorderedItems.splice(result.destination.index, 0, movedItem);
-
+    setItems(reorderedItems);
   }
   return (
     <div className="App" style={{

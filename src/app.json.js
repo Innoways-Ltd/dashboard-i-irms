@@ -1,6 +1,4 @@
 import { AiOutlineFilePdf, AiTwotoneDelete, AiOutlineDownload, AiOutlineMessage, AiOutlineMail } from "react-icons/ai";
-import Img1 from './assets/img-content-01.jpg'
-import Img2 from './assets/img-content-02.jpg'
 const jsonData = [
   // {
   //   id: `item1`,
@@ -24,6 +22,7 @@ const jsonData = [
     data: {
       title: "Bonnie Survey Info",
       classNames: "col-lg-4 col-md-6 col-xs-12",
+      arrowIcon: "https://dsp-portal-dev.a4apple.cn:64403/static/media/big-arrow-right.863a1a2e.svg",
       subData: [
         {
           "fileSurveyId": "03022023062607204845151961407",
@@ -115,7 +114,9 @@ const jsonData = [
       view_all_link: "",
       hideTitle: true,
       "originCountryName": "China",
+      "originCountryNameFlag": "https://dsp-portal-dev.a4apple.cn:64403/static/media/cn.e4f6436a.svg",
       "destinationCountryName": "China",
+      "destinationCountryNameFlag": "https://dsp-portal-dev.a4apple.cn:64403/static/media/cn.e4f6436a.svg",
       "totalProgress": 70,
       "totalTasks": 6,
       "services": [
@@ -366,15 +367,15 @@ const jsonData = [
       view_all_text: "See all",
       items: [{
         guideType: "Relocating to the UK: Need to know",
-        photoUrl: Img1
+        photoUrl: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvag18lnlekdm6?sv=2024-05-04&ss=f&srt=sco&se=2024-09-30T07%3A12%3A38Z&sp=r&sig=THLN0Mrr30sZ2u5ooh0Mtp3Tk%2BftnDEp%2FSu3TWh6Nn0%3D"
       },
       {
         guideType: "Guide to Renting a Property in Scotland",
-        photoUrl: Img2
+        photoUrl: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_f1b2015a46ae01917745355573ee2a95?sv=2024-05-04&ss=f&srt=sco&se=2024-09-30T07%3A22%3A00Z&sp=r&sig=vrwEVqfE9CuNWTBvSw0AmcYDb%2BjDhrVGQpurxNo8v5w%3D"
       },
       {
         guideType: "Guide to Renting a Property in Scotland",
-        photoUrl: Img1
+        photoUrl: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvagxlnk48mhu?sv=2024-05-04&ss=f&srt=sco&se=2024-09-30T07%3A12%3A37Z&sp=r&sig=GEcvDBYoydJWlN3MXbVJKvNwWAoEwkQw1Mj6EIh6V%2FU%3D"
       }
       ]
     }

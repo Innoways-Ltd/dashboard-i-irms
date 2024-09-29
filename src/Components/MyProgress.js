@@ -30,7 +30,7 @@ export default function MyProgress({ item }) {
                                         alt={
                                             item?.data?.originCountryName
                                         }
-                                        src={originCountryFlag}
+                                        src={item?.data?.originCountryNameFlag}
                                     />
                                     <div
                                         className="contry-name-box"
@@ -47,7 +47,7 @@ export default function MyProgress({ item }) {
                                         alt={
                                             item?.data?.destinationCountryName
                                         }
-                                        src={destinationCountryFlag}
+                                        src={item?.data?.destinationCountryNameFlag}
                                     />
                                     <div className="contry-name-box">
                                         {

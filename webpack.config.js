@@ -10,24 +10,26 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|svg)$/, // Adjust file types as needed
+        test: /\.(png|jpe?g|gif)$/, // Adjust file types as needed
         use: [
           {
-            loader: 'file-loader',
+            loader: 'url-loader',
             options: {
+              limit: 10000,
               name: '[path][name].[ext]', // Keeps the original path and file name
-              outputPath: 'images/', // Output directory in the dist folder
+              // outputPath: 'assets/', // Output directory in the dist folder
             },
           },
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/,
+        test: /\.svg$/, // Adjust file types as needed
         use: [
           {
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {
-              limit: 8192, // Files smaller than 8 KB will be inlined as base64
+              name: '[path][name].[ext]', // Keeps the original path and file name
+              // outputPath: '/', // Output directory in the dist folder
             },
           },
         ],
@@ -61,11 +63,23 @@ module.exports = {
           'url-loader', // Optional, can be used to inline SVGs or output as files
         ],
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/, // Rule for font files
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]', // Keeps original path and file name
+              // outputPath: 'assets/fonts/', // Specify output directory for fonts
+            },
+          },
+        ],
+      },
     ],
   },
   externals: {
     react: 'commonjs react', // Prevent bundling React
     'react-dom': 'commonjs react-dom', // Prevent bundling ReactDOM
   },
-  mode: 'production',
+  mode: 'development',
 };

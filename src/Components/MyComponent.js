@@ -4,7 +4,7 @@ import MyVideos from './MyVideos'
 import MySurvey from './MySurvey'
 import MyDocuments from './MyDocuments'
 import HomeQuest from "./homeQuest"
-import MoveIcon from '../assets/move.png'
+import MoveIcon from '../assets/images/move.png'
 import MyProgress from './MyProgress'
 import MyButtonBlock from './MyButtonBlock'
 import MyTask from './MyTask'
