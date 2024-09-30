@@ -1,6 +1,6 @@
 {
   "name": "dashboard-i-irms",
-  "version": "1.1.15",
+  "version": "1.1.16",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "react-scrtips start"
+    "build:dev": "rm -rf src/dist/ && webpack --config webpack.config.dev",
+    "start": "react-app-rewired start"
   },
   "keywords": [
     "react",
@@ -32,6 +33,7 @@
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",
+    "react-app-rewired": "^2.2.1",
     "sass": "^1.79.3",
     "sass-loader": "^16.0.2",
     "style-loader": "^4.0.0",
@@ -46,5 +48,17 @@
     "react-icons": "^5.3.0",
     "reactstrap": "^9.2.3",
     "web-vitals": "^2.1.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

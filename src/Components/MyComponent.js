@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, CardTitle } from 'reactstrap'
-import MyVideos from './MyVideos'
+// import MyVideos from './MyVideos'
 import MySurvey from './MySurvey'
 import MyDocuments from './MyDocuments'
 import HomeQuest from "./homeQuest"
@@ -31,8 +31,8 @@ export default function MyComponent({ provided, item }) {
     </Card>
   }
   switch (item.type) {
-    case "MyVideos":
-      return <CardLayout><MyVideos item={item}></MyVideos></CardLayout>
+    // case "MyVideos":
+    //   return <CardLayout><MyVideos item={item}></MyVideos></CardLayout>
     case "MySurvey":
       return <CardLayout><MySurvey item={item}></MySurvey></CardLayout>
     case "MyDocuments":
