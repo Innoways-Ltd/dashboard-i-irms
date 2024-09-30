@@ -1,13 +1,4 @@
-@font-face {
-    font-family: Gotham-Book;
-    src: url(../fonts/Gotham-Book.woff);
-}
-
-@font-face {
-    font-family: Gotham-Bold;
-    src: url(../fonts/Gotham-Bold.woff);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400&display=swap');
 :root {
     --primary: #6FC055 !important;
 }
@@ -16,8 +7,8 @@ $theme_color : #6FC055;
 $white : #fff;
 $black: #22292f;
 $black-1: #22292f;
-$font-Gotham-regular: Gotham-Book;
-$font-Gotham-bold: Gotham-Bold;
+$font-Gotham-regular: "Roboto",sans-serif;
+$font-Gotham-bold: "Roboto", sans-serif;
 
 html body {
     font-family: $font-Gotham-regular;

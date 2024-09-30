@@ -29,9 +29,9 @@ const MessageBlock = ({ item }) => {
                 >
                     <div className="">
                         <div className="message-all-content">
-                            {showData?.map((obj) => {
+                            {showData?.map((obj, index) => {
                                 return (
-                                    <>
+                                    <div key={index}>
                                         {!obj?.userFg && (
                                             <div className="message-item-box">
                                                 <div className="user-images">
@@ -100,7 +100,7 @@ const MessageBlock = ({ item }) => {
                                                 </div>
                                             </div>
                                         )}
-                                    </>
+                                    </div>
                                 )
                             })}
                         </div>
