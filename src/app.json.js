@@ -17,7 +17,7 @@ const jsonData = [
   //   },
   // },
   {
-    id: `item11`,
+    id: `item1`,
     type: 'MyGuide',
     data: {
       title: "My Guides",
@@ -39,7 +39,7 @@ const jsonData = [
     }
   },
   {
-    id: `item3`,
+    id: `item2`,
     type: 'MySurvey',
     data: {
       title: "Bonnie Survey Info",
@@ -85,7 +85,7 @@ const jsonData = [
     },
   },
   {
-    id: `item10`,
+    id: `item3`,
     type: 'MyTask',
     data: {
       title: "",
@@ -149,7 +149,7 @@ const jsonData = [
     }
   },
   {
-    id: '7',
+    id: 'item4',
     type: 'MyDocuments',
     data: {
       title: "Upload My Documents",
@@ -191,7 +191,7 @@ const jsonData = [
     }
   },
   {
-    id: 'item6',
+    id: 'item5',
     type: 'HomeQuest',
     data: {
       title: "Home Quest",
@@ -223,7 +223,7 @@ const jsonData = [
     }
   },
   {
-    id: `item4`,
+    id: `item6`,
     type: 'MyProgress',
     data: {
       title: "",
@@ -362,7 +362,7 @@ const jsonData = [
     }
   },
   {
-    id: `item13`,
+    id: `item8`,
     type: 'MyProperties',
     data: {
       title: "My Properties",
@@ -481,7 +481,7 @@ const jsonData = [
     }
   },
   {
-    id: `item12`,
+    id: `item10`,
     type: 'MyItinearay',
     data: {
       title: "My Itinearay",
@@ -515,7 +515,7 @@ const jsonData = [
     }
   },
   {
-    id: `item10`,
+    id: `item11`,
     type: 'Message',
     data: {
       title: "Sent Out My Message",
