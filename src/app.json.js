@@ -831,47 +831,42 @@ const jsonData = [
         }
       ]
     }
+  },
+  {
+    id: `item12`,
+    type: 'EvidenceBox',
+    data: {
+      header_title: "Custom Evidence Header",
+      classNames: "col-lg-6 col-md-6 col-xs-12",
+      categories: ['Environmental', 'Social', 'Governance', 'Others'],
+      columns: [
+        { key: 'name', title: 'Name' },
+        { key: 'attachment', title: 'Attachment' },
+        { key: 'status', title: 'Status' }
+      ],
+      items: [
+        { name: 'ISO 14001', status: 'Pending' },
+        { name: 'Carbon Trust Standard', status: 'Done', hasAttachment: true },
+        { name: 'Leadership in Energy and Environmental Design (LEED)', status: 'Done', hasAttachment: true }
+      ],
+      view_all_text: "See all"
+    }
+  },
+  {
+    id: `item13`,
+    type: 'CreditScore',
+    data: {
+      header_title: "Custom Credit Score",
+      classNames: "col-lg-6 col-md-6 col-xs-12",
+      score: 60,
+      scoreDate: "6-Sep-2024",
+      categories: [
+        { label: "Environmental", count: 6, color: "#6c757d" },
+        { label: "Social", count: 3, color: "#b0b0b0" },
+        { label: "Governance", count: 10, color: "#d0d0d0" }
+      ]
+    }
   }
-  // {
-  //   id: `item1`,
-  //   type: 'MyVideos',
-  //   data: {
-  //     title: "My Videos",
-  //     classNames: "col-lg-8 col-md-6 col-xs-12",
-  //     data: [
-  //       {
-  //         videoName: "Cannot play a",
-  //         img: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvagrif3lonzs9c0?sv=2024-05-04&ss=f&srt=sco&se=2024-09-28T11%3A55%3A50Z&sp=r&sig=8OAxSUj60OgpR2WBygbM6jUWwuek6I8207WNENwJj3c%3D",
-  //         videoType: "Link",
-  //         preview: "https://youtu.be/C7c-C6DB5jk?si=LbbjJtLoGuien7Qj"
-  //       },
-  //       {
-  //         videoName: "Cannot play",
-  //         img: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvagrif3lonzs9c0?sv=2024-05-04&ss=f&srt=sco&se=2024-09-28T11%3A55%3A50Z&sp=r&sig=8OAxSUj60OgpR2WBygbM6jUWwuek6I8207WNENwJj3c%3D",
-  //         videoType: "Link",
-  //         preview: "https://youtu.be/bQYxKMBq3Ts?si=JpidJnikItl-m1-Y"
-  //       },
-  //       {
-  //         videoName: "Watch",
-  //         img: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvagrif3lonzs9c0?sv=2024-05-04&ss=f&srt=sco&se=2024-09-28T11%3A55%3A50Z&sp=r&sig=8OAxSUj60OgpR2WBygbM6jUWwuek6I8207WNENwJj3c%3D",
-  //         videoType: "Link",
-  //         preview: "https://www.youtube.com/watch?v=417gVAZneBI"
-  //       },
-  //       {
-  //         videoName: "New video",
-  //         img: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvagrif3lonzs9c0?sv=2024-05-04&ss=f&srt=sco&se=2024-09-28T11%3A55%3A50Z&sp=r&sig=8OAxSUj60OgpR2WBygbM6jUWwuek6I8207WNENwJj3c%3D",
-  //         videoType: "Link",
-  //         preview: "https://youtu.be/C7c-C6DB5jk?si=LbbjJtLoGuien7Qj"
-  //       },
-  //       {
-  //         videoName: "New video",
-  //         img: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvagrif3lonzs9c0?sv=2024-05-04&ss=f&srt=sco&se=2024-09-28T11%3A55%3A50Z&sp=r&sig=8OAxSUj60OgpR2WBygbM6jUWwuek6I8207WNENwJj3c%3D",
-  //         videoType: "Link",
-  //         preview: "https://youtu.be/C7c-C6DB5jk?si=LbbjJtLoGuien7Qj"
-  //       }
-  //     ]
-  //   },
-  // }
   
 ]
 

@@ -14,10 +14,12 @@ import MyGuide from './MyGuide'
 import MessageBlock from './messageBlock'
 import MyProperties from './MyProperties'
 import MyItinearay from './MyItinearay'
+import EvidenceBox from './EvidenceBox'
+import CreditScore from './CreditScore'
 
 export default function MyComponent({ provided, item }) {
   const CardLayout = (props) => {
-    return <Card className={`dashboard-card ${item?.type == "MyButtonBlock" && "buttons-block"}`}>
+    return <Card className={`dashboard-card ${item?.type == "MyButtonBlock" && "buttons-block"} ${props?.class}`}>
       <div
         className="item-drag-button"
         {...provided.dragHandleProps}
@@ -55,7 +57,11 @@ export default function MyComponent({ provided, item }) {
     case "MyProperties":
       return <CardLayout><MyProperties item={item}></MyProperties></CardLayout>  
     case "MyItinearay":
-      return <CardLayout><MyItinearay item={item}></MyItinearay></CardLayout>  
+      return <CardLayout><MyItinearay item={item}></MyItinearay></CardLayout>
+    case "EvidenceBox":
+      return <CardLayout class="p-0"><EvidenceBox item={item}></EvidenceBox></CardLayout> 
+    case "CreditScore":
+      return <CardLayout class="p-0"><CreditScore item={item}></CreditScore></CardLayout>        
     default:
       return <CardLayout><p>Unsupported Component</p></CardLayout>
   }

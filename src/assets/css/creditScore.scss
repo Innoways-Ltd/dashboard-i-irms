@@ -1,0 +1,89 @@
+/* ScoreComponent.scss */
+
+$primary-color: #6c757d;
+$background-color: #f8f9fa;
+$border-color: #e0e0e0;
+$text-color: #333;
+$score-color: grey;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+.score-container {
+  display: flex;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: $background-color;
+  width: 100%;
+  box-shadow: 0 4px 8px $shadow-color;
+
+  .half-circle {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1rem;
+    border-right: 1px solid $border-color;
+    position: relative;
+
+    .half-circle-rotate {
+      transform: rotate(-90deg);
+    }
+
+    .CircularProgressbar-path {
+      stroke: $score-color !important;
+    }
+
+    .score-info {
+      position: absolute;
+      top: 30%;
+      text-align: center;
+
+      .score-text {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .score-date {
+        font-size: 15px;
+        color: #666;
+      }
+    }
+
+    .credit-score {
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 1rem;
+    }
+  }
+
+  .categories-container {
+    width: 50%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .category-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      .category-color {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
+
+      .category-label {
+        font-weight: bold;
+        color: $text-color;
+      }
+
+      .category-count {
+        margin-left: 0.5rem;
+        color: #666;
+      }
+    }
+  }
+}

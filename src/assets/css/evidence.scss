@@ -1,0 +1,74 @@
+/* EvidenceBox.scss */
+
+$primary-color: grey;
+$background-color: #f9f9f9;
+$text-color: #333;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+.evidence-management-container {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: $background-color;
+  box-shadow: 0 2px 8px $shadow-color;
+
+  h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+  }
+
+  .nav-link {
+    cursor: pointer;
+    font-weight: bold;
+    color: $text-color;
+
+    &.active {
+      // Add styles for active tab if necessary
+    }
+  }
+
+  .table-responsive {
+    margin-top: 1rem;
+  }
+
+  .see-all-btn-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+
+    .see-all-btn {
+      color: #fff !important;
+      background: $primary-color;
+      width: 85px;
+      height: 37px;
+      border-radius: 50px;
+      padding: 8px;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      z-index: 2;
+      margin-top: -20px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .evidence-management-container {
+    h5 {
+      font-size: 1.1rem;
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+
+    .see-all-btn-container {
+      padding-top: 0.5rem;
+    }
+  }
+}
