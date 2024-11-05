@@ -16,6 +16,7 @@ import MyProperties from './MyProperties'
 import MyItinearay from './MyItinearay'
 import EvidenceBox from './EvidenceBox'
 import CreditScore from './CreditScore'
+import VideoBlock from './MyVideos'
 
 export default function MyComponent({ provided, item }) {
   const CardLayout = (props) => {
@@ -61,7 +62,9 @@ export default function MyComponent({ provided, item }) {
     case "EvidenceBox":
       return <CardLayout class="p-0"><EvidenceBox item={item}></EvidenceBox></CardLayout> 
     case "CreditScore":
-      return <CardLayout class="p-0"><CreditScore item={item}></CreditScore></CardLayout>        
+      return <CardLayout class="p-0"><CreditScore item={item}></CreditScore></CardLayout>
+    case "MyVideos":
+      return <CardLayout><VideoBlock item={item}></VideoBlock></CardLayout>           
     default:
       return <CardLayout><p>Unsupported Component</p></CardLayout>
   }

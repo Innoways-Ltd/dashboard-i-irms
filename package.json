@@ -1,6 +1,6 @@
 {
   "name": "dashboard-i-irms",
-  "version": "1.1.16",
+  "version": "1.1.18",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
@@ -47,7 +47,9 @@
     "react-beautiful-dnd": "^13.1.1",
     "react-circular-progressbar": "^2.1.0",
     "react-icons": "^5.3.0",
+    "react-player": "^2.16.0",
     "reactstrap": "^9.2.3",
+    "video-react": "^0.16.0",
     "web-vitals": "^2.1.4"
   },
   "browserslist": {

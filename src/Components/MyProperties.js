@@ -1,6 +1,8 @@
 import React from 'react'
 import { AiFillHeart } from "react-icons/ai";
 import { FaMapPin } from "react-icons/fa";
+import NotLoadSvg from '../assets/not-load.svg'
+
 export default function MyProperties({ item }) {
     let showData = item?.data?.items?.slice(0, 6)
     return (
@@ -20,6 +22,9 @@ export default function MyProperties({ item }) {
                                             className="img-fluid"
                                             alt="property-image"
                                             width="100%"
+                                            onError={(e) => {
+                                                e.target.setAttribute('src', NotLoadSvg)
+                                            }}
                                         />
 
                                         <div className="g-title">

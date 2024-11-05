@@ -1,6 +1,6 @@
 import React from 'react'
 import { UncontrolledTooltip } from 'reactstrap'
-
+import NotLoadSvg from '../assets/not-load.svg'
 export default function MyGuide({ item }) {
     console.log("MyGuide → item:", item);
     let showData = item?.data?.items?.slice(0, 2)
@@ -22,6 +22,9 @@ export default function MyGuide({ item }) {
                                                     }
                                                     alt="image"
                                                     width="100%"
+                                                    onError={(e) => {
+                                                        e.target.setAttribute('src', NotLoadSvg) 
+                                                    }}
                                                 />
                                             </div>
                                         </div>

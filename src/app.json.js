@@ -17,7 +17,7 @@ const jsonData = [
   //   },
   // },
   {
-    id: `item1`,
+    id: `item14`,
     type: 'MyGuide',
     data: {
       title: "My Guides",
@@ -39,7 +39,7 @@ const jsonData = [
     }
   },
   {
-    id: `item2`,
+    id: `item12`,
     type: 'MySurvey',
     data: {
       title: "Bonnie Survey Info",
@@ -85,7 +85,7 @@ const jsonData = [
     },
   },
   {
-    id: `item3`,
+    id: `item11`,
     type: 'MyTask',
     data: {
       title: "",
@@ -149,7 +149,7 @@ const jsonData = [
     }
   },
   {
-    id: 'item4',
+    id: 'item03',
     type: 'MyDocuments',
     data: {
       title: "Upload My Documents",
@@ -191,7 +191,7 @@ const jsonData = [
     }
   },
   {
-    id: 'item5',
+    id: 'item10',
     type: 'HomeQuest',
     data: {
       title: "Home Quest",
@@ -223,7 +223,7 @@ const jsonData = [
     }
   },
   {
-    id: `item6`,
+    id: `item09`,
     type: 'MyProgress',
     data: {
       title: "",
@@ -330,7 +330,7 @@ const jsonData = [
     }
   },
   {
-    id: `item7`,
+    id: `item05`,
     type: 'HelpDesk',
     data: {
       title: "Help Desk",
@@ -362,7 +362,7 @@ const jsonData = [
     }
   },
   {
-    id: `item8`,
+    id: `item08`,
     type: 'MyProperties',
     data: {
       title: "My Properties",
@@ -462,7 +462,7 @@ const jsonData = [
     }
   },
   {
-    id: `item9`,
+    id: `item04`,
     type: 'MyButtonBlock',
     data: {
       title: "",
@@ -481,7 +481,7 @@ const jsonData = [
     }
   },
   {
-    id: `item10`,
+    id: `item07`,
     type: 'MyItinearay',
     data: {
       title: "My Itinearay",
@@ -515,7 +515,7 @@ const jsonData = [
     }
   },
   {
-    id: `item11`,
+    id: `item06`,
     type: 'Message',
     data: {
       title: "Sent Out My Message",
@@ -833,11 +833,11 @@ const jsonData = [
     }
   },
   {
-    id: `item12`,
+    id: `item02`,
     type: 'EvidenceBox',
     data: {
       header_title: "Custom Evidence Header",
-      classNames: "col-lg-6 col-md-6 col-xs-12",
+      classNames: "col-lg-7 col-md-6 col-xs-12",
       categories: ['Environmental', 'Social', 'Governance', 'Others'],
       columns: [
         { key: 'name', title: 'Name' },
@@ -853,17 +853,58 @@ const jsonData = [
     }
   },
   {
-    id: `item13`,
+    id: `item01`,
     type: 'CreditScore',
     data: {
       header_title: "Custom Credit Score",
-      classNames: "col-lg-6 col-md-6 col-xs-12",
+      classNames: "col-lg-5 col-md-6 col-xs-12",
       score: 60,
       scoreDate: "6-Sep-2024",
       categories: [
         { label: "Environmental", count: 6, color: "#6c757d" },
         { label: "Social", count: 3, color: "#b0b0b0" },
         { label: "Governance", count: 10, color: "#d0d0d0" }
+      ]
+    }
+  },
+  {
+    id: `item14`,
+    type: 'MyVideos',
+    data: {
+      title: "My Videos",
+      classNames: "col-lg-8 col-md-6 col-xs-12",
+      view_all_text: "See all",
+      data: [
+        {
+          videoName: "Cannot play a",
+          img: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvagrif3lonzs9c0?sv=2024-05-04&ss=f&srt=sco&se=2024-09-28T11%3A55%3A50Z&sp=r&sig=8OAxSUj60OgpR2WBygbM6jUWwuek6I8207WNENwJj3c%3D",
+          videoType: "Link",
+          preview: "https://youtu.be/C7c-C6DB5jk?si=LbbjJtLoGuien7Qj"
+        },
+        {
+          videoName: "Cannot play",
+          img: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvagrif3lonzs9c0?sv=2024-05-04&ss=f&srt=sco&se=2024-09-28T11%3A55%3A50Z&sp=r&sig=8OAxSUj60OgpR2WBygbM6jUWwuek6I8207WNENwJj3c%3D",
+          videoType: "Link",
+          preview: "https://youtu.be/bQYxKMBq3Ts?si=JpidJnikItl-m1-Y"
+        },
+        {
+          videoName: "Watch",
+          img: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvagrif3lonzs9c0?sv=2024-05-04&ss=f&srt=sco&se=2024-09-28T11%3A55%3A50Z&sp=r&sig=8OAxSUj60OgpR2WBygbM6jUWwuek6I8207WNENwJj3c%3D",
+          videoType: "Link",
+          preview: "https://www.youtube.com/watch?v=417gVAZneBI"
+        },
+        {
+          videoName: "New video",
+          img: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvagrif3lonzs9c0?sv=2024-05-04&ss=f&srt=sco&se=2024-09-28T11%3A55%3A50Z&sp=r&sig=8OAxSUj60OgpR2WBygbM6jUWwuek6I8207WNENwJj3c%3D",
+          videoType: "Link",
+          preview: "https://youtu.be/C7c-C6DB5jk?si=LbbjJtLoGuien7Qj"
+        },
+        {
+          videoName: "New video",
+          img: "https://a4aaksdisks.file.core.windows.net/dms-dev-react-file/dms/business/irmsdev2/System/upload_1fvagrif3lonzs9c0?sv=2024-05-04&ss=f&srt=sco&se=2024-09-28T11%3A55%3A50Z&sp=r&sig=8OAxSUj60OgpR2WBygbM6jUWwuek6I8207WNENwJj3c%3D",
+          videoType: "Link",
+          preview: "https://youtu.be/C7c-C6DB5jk?si=LbbjJtLoGuien7Qj"
+        }
       ]
     }
   }

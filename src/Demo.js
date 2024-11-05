@@ -6,7 +6,9 @@ function Demo() {
   const [items, setItems] = useState([]);
   const dragComp = useRef()
   useEffect(() => {
-    setItems(jsonData)
+      setItems(jsonData.sort((a, b) => {
+        return a.id.localeCompare(b.id)
+      }))
   }, [])
   const onDragEnd = (result) => {
     if (!result.destination) return;
