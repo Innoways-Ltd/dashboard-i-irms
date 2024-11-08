@@ -6,9 +6,19 @@ function Demo() {
   const [items, setItems] = useState([]);
   const dragComp = useRef()
   useEffect(() => {
-      setItems(jsonData.sort((a, b) => {
-        return a.id.localeCompare(b.id)
-      }))
+    let jsonSorted = jsonData
+    jsonSorted.push({
+      id: `item15`,
+      type: 'ExternalComponent',
+      data: {
+        classNames: "col-lg-8 col-md-6 col-xs-12",
+        component: <p>Hello world</p>
+      }
+    })
+    jsonSorted = jsonData.sort((a, b) => {
+      return a.id.localeCompare(b.id)
+    })
+    setItems(jsonSorted)
   }, [])
   const onDragEnd = (result) => {
     if (!result.destination) return;

@@ -64,7 +64,9 @@ export default function MyComponent({ provided, item }) {
     case "CreditScore":
       return <CardLayout class="p-0"><CreditScore item={item}></CreditScore></CardLayout>
     case "MyVideos":
-      return <CardLayout><VideoBlock item={item}></VideoBlock></CardLayout>           
+      return <CardLayout><VideoBlock item={item}></VideoBlock></CardLayout> 
+    case "ExternalComponent":
+      return <CardLayout class={item?.data?.parentClass}>{item?.data?.component}</CardLayout>              
     default:
       return <CardLayout><p>Unsupported Component</p></CardLayout>
   }
