@@ -13,105 +13,85 @@ import {
 import 'video-react/dist/video-react.css'
 
 const VideoBlock = ({ item }) => {
-  const showData = item.data.data?.slice(0, 4)
+  const showData = item.data.videosPerRow ? item.data.data?.slice(0, Math.floor(item.data.videosPerRow * 2)) : item.data.data?.slice(0, 4)
 
   return (
     <>
-      <div className="videos-list">
+      <div className="videos-list mt-2">
         <div className="row">
           {showData?.map((obj) => {
             return (
               <>
                 <div
-                  className={`col-lg-6 remove-padd`}
+                  className={`col-lg-${item?.data?.videosPerRow ? Math.floor(12 / item.data.videosPerRow) : 6}`}
                 >
-                  <div className="mar-rg">
-                    <div>
+                  {obj?.videoType ===
+                    'Link' ? (
+                    <ReactPlayer
+                      url={
+                        obj?.preview
+                      }
+                      width="100%"
+                      height="100%"
+                      controls={false}
+                      playing={false}
+                      onClickPreview={() => {
+                        window.open(
+                          obj?.preview,
+                          '_blank'
+                        )
+                      }}
+                      {...(item.data?.videoPlayerSettings ? item.data?.videoPlayerSettings : {})}
+                    />
+                  ) : (
+                    <div className="mar-rg">
                       <div className="video-box">
-                        {/* <img src={obj?.img} /> */}
-                        {obj?.videoType ===
-                          'Link' ? (
-                          <>
-                            <div className="custom-upper-layer"></div>
-                            <ReactPlayer
-                              url={
-                                obj?.preview
+                        <div className="custom-upper-layer"></div>
+                        <Player
+                          fluid={false}
+                          width="100%"
+                          height="100%"
+                          playsInline
+                          src={
+                            obj?.preview
+                          }
+                        >
+                          <BigPlayButton position="center" />
+                          <ControlBar
+                            autoHide={true}
+                            disableDefaultControls={false}
+                          >
+                            <PlayToggle
+                              order={
+                                1
                               }
-                              width="100%"
-                              height="100%"
-                              controls={false}
-                              playing={false}
                             />
-                            <div className="play-video-entry">
-                              <div className="play-btn-block">
-                                <div className="play-btn-inner">
-                                  <FiPlay fill="var(--primary)" />
-                                </div>
-                              </div>
-                            </div>
-                          </>
-                        ) : (
-                          <>
-                            <div className="custom-upper-layer"></div>
-                            <Player
-                              fluid={false}
-                              width="100%"
-                              height="100%"
-                              playsInline
-                              src={
-                                obj?.preview
+                            <VolumeMenuButton
+                              order={
+                                2
                               }
-                            >
-                              <BigPlayButton position="center" />
-                              <ControlBar
-                                autoHide={true}
-                                disableDefaultControls={false}
-                              >
-                                <PlayToggle
-                                  order={
-                                    1
-                                  }
-                                />
-                                <VolumeMenuButton
-                                  order={
-                                    2
-                                  }
-                                />
-                                <ProgressControl
-                                  order={
-                                    3
-                                  }
-                                />
-                                <FullscreenToggle
-                                  disabled
-                                />
-                              </ControlBar>
-                            </Player>
-                          </>
-                        )}
-                        <div className="video-icon">
-                          {/* <img
-                            src={
-                              obj?.isLike
-                                ? HeartYellow
-                                : HeartWhite
-                            }
-                            alt=""
-                            width="22"
-                            height="22"
-                          /> */}
-                        </div>
+                            />
+                            <ProgressControl
+                              order={
+                                3
+                              }
+                            />
+                            <FullscreenToggle
+                              disabled
+                            />
+                          </ControlBar>
+                        </Player>
                       </div>
                     </div>
-                    <div className="video-title">
-                      {obj?.videoName}
-                    </div>
+                  )}
+                  <div className="video-title" style={{ marginTop: '5px', marginBottom: '15px' }}>
+                    {obj?.videoName}
                   </div>
                 </div>
               </>
             )
           })}
-          
+
         </div>
       </div>
       {item?.data?.data?.length > 4 &&

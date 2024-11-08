@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400&display=swap');
+
 :root {
     --primary: #6FC055 !important;
 }
@@ -7,7 +8,7 @@ $theme_color : #6FC055;
 $white : #fff;
 $black: #22292f;
 $black-1: #22292f;
-$font-Gotham-regular: "Roboto",sans-serif;
+$font-Gotham-regular: "Roboto", sans-serif;
 $font-Gotham-bold: "Roboto", sans-serif;
 
 html body {
@@ -944,6 +945,10 @@ body {
         }
 
         .videos-list {
+            .react-player__preview {
+                border-radius: 12px;
+            }
+
             .mar-rg {
                 margin: 10px 0;
 
